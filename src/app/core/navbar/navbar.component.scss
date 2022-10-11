@@ -17,4 +17,20 @@
       color: white;
     }
   }
+
+  button {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+
+    &.connected {
+      background-color: green;
+    }
+
+    &.disconnected {
+      background-color: red;
+    }
+  }
 }
