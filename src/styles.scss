@@ -1,1 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "helvetica neue";
+
+  .store {
+    display: flex;
+
+    height: 100%;
+    ul {
+      flex: 1;
+      list-style: none;
+
+      &.card-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        li {
+          cursor: pointer;
+          border: 3px solid grey;
+          border-radius: 10px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          height: 10%;
+
+          &:hover,
+          &.active {
+            border-color: blueviolet;
+            color: blueviolet;
+          }
+
+          img {
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    .detail {
+      flex: 2;
+    }
+  }
+
+  .item-detail {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      max-height: 50%;
+    }
+  }
+}

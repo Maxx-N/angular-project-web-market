@@ -1,0 +1,17 @@
+<div class="store">
+  <ul class="card-container">
+    <li
+      *ngFor="let book of books$ | async"
+      [routerLink]="book.id.toString()"
+      [routerLinkActive]="'active'"
+    >
+      <h3>
+        {{ book.name }}
+      </h3>
+      <img [src]="book.imageUrl" />
+    </li>
+  </ul>
+  <div class="detail">
+    <router-outlet></router-outlet>
+  </div>
+</div>
