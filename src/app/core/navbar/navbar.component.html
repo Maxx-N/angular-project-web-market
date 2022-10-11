@@ -2,6 +2,8 @@
   <a routerLink="index" [routerLinkActive]="'active'">Index</a>
   <a routerLink="food" [routerLinkActive]="'active'">Food</a>
   <a routerLink="book" [routerLinkActive]="'active'">Books</a>
+  <a routerLink="profile" [routerLinkActive]="'active'" *ngIf="isAuth">Profile</a>
+
   <button
     (click)="onToggleAuth()"
     [ngClass]="{ connected: isAuth, disconnected: !isAuth }"

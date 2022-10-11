@@ -25,6 +25,10 @@
     cursor: pointer;
     padding: 10px;
 
+    &:hover {
+      color: blueviolet;
+    }
+
     &.connected {
       background-color: green;
     }
