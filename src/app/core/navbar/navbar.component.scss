@@ -24,17 +24,18 @@
     border: none;
     cursor: pointer;
     padding: 10px;
+    border-radius: 10px;
 
     &:hover {
       color: blueviolet;
     }
 
     &.connected {
-      background-color: green;
+      background-color: lightgreen;
     }
 
     &.disconnected {
-      background-color: red;
+      background-color: lightcoral;
     }
   }
 }
